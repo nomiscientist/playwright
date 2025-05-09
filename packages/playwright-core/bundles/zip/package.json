@@ -4,14 +4,13 @@
   "private": true,
   "scripts": {
     "esbuild": "node build.js",
-    "build": "npm run esbuild",
+    "build": "node init && npm run esbuild",
     "watch": "npm run esbuild -- --watch",
     "generate-license": "node ../../../../utils/generate_third_party_notice.js"
   },
   "dependencies": {
     "debug": "^4.1.1",
     "get-stream": "^5.1.0",
-
     "yauzl": "3.2.0",
     "yazl": "2.5.1"
   },

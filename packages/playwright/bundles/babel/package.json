@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "esbuild": "node build.js",
-    "build": "npm run esbuild",
+    "build": "node init && npm run esbuild",
     "watch": "npm run esbuild -- --watch",
     "generate-license": "node ../../../../utils/generate_third_party_notice.js"
   },
