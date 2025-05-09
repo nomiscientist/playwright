@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear",
+    "build": "node init && rollup -c",
+    "dev": "node init && rollup -c -w",
+    "start": "node init && sirv public --no-clear",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
